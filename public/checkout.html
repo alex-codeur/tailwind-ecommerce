@@ -114,153 +114,130 @@
         <span class="text-sm text-gray-400">
             <i class="fas fa-chevron-right"></i>
         </span>
-        <p class="text-gray-600 font-medium">My Account</p>
+        <p class="text-gray-600 font-medium">Checkout</p>
     </div>
     <!-- breadcrums end -->
 
-    <!-- Account wrapper -->
-    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-        <!-- sidebar -->
-        <div class="col-span-3">
-            <!-- account profile -->
-            <div class="py-4 px-3 shadow flex items-center gap-4">
-                <div class="flex-shrink-0">
-                    <img src="images/alex3.png" alt="avatar" class="rounded-full w-14 h-14 border border-gray-200 p-1 object-cover">
-                </div>
-                <div class="flex-grow">
-                    <p class="text-gray-600">Hello,</p>
-                    <h4 class="text-gray-800 font-medium">
-                        Alex Esaki
-                    </h4>
-                </div>
-            </div>
-            <!-- account profile end -->
-
-            <!-- profile links -->
-            <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
-                <!-- single link -->
-                    <div class="space-y-1 pl-8">
-                        <a href="#" class="relative text-primary block font-medium capitalize transition">
-                            <span class="absolute -left-8 top-0 text-base">
-                                <i class="far fa-address-card"></i>
-                            </span>
-                            Manage account
-                        </a>
-                        <a href="#" class="relative hover:text-primary block  capitalize transition">
-                            My order history
-                        </a>
-                        <a href="#" class="relative hover:text-primary block  capitalize transition">
-                            Manage address
-                        </a>
-                        <a href="#" class="relative hover:text-primary block  capitalize transition">
-                            Change password
-                        </a>
+    <!-- checkout wrapper -->
+    <div class="container gap-6 grid grid-cols-12 items-start pb-16 pt-4">
+        <!-- checkout form -->
+        <div class="col-span-8 border border-gray-200 p-4 rounded">
+            <h3 class="text-lg font-medium capitalize mb-4">checout</h3>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="firstname">Fisrt Name <span class="text-primary">*</span></label>
+                        <input type="text" name="firstname" id="firstname" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
                     </div>
-                <!-- single link end -->
-
-                <!-- single link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-address-card"></i>
-                        </span>
-                        My Order History
-                    </a>
-                    <a href="#" class="relative hover:text-primary block  capitalize transition">
-                        My returns
-                    </a>
-                    <a href="#" class="relative hover:text-primary block  capitalize transition">
-                        My Cancellations
-                    </a>
-                    <a href="#" class="relative hover:text-primary block  capitalize transition">
-                        My Reviews
-                    </a>
+                    <div>
+                        <label for="lastname">Last Name <span class="text-primary">*</span></label>
+                        <input type="text" name="lastname" id="lastname" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
+                    </div>
                 </div>
-                <!-- single link end -->
-
-                <!-- single link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-address-card"></i>
-                        </span>
-                        Payment Methods
-                    </a>
-                    <a href="#" class="relative hover:text-primary block  capitalize transition">
-                        Voucher
-                    </a>
+                <div>
+                    <label for="company" class="text-gray-600 mb-2 block">
+                        Company name
+                    </label>
+                    <input type="text" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
                 </div>
-                <!-- single link end -->
-                <!-- single link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-heart"></i>
-                        </span>
-                        My wishlist
-                    </a>
+                <div>
+                    <label for="Region" class="text-gray-600 mb-2 block">
+                        Country/Region <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="Region" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
                 </div>
-                <!-- single link end -->
-                <!-- single link -->
-                <div class="space-y-1 pl-8 pt-4">
-                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
-                        <span class="absolute -left-8 top-0 text-base">
-                            <i class="far fa-address-card"></i>
-                        </span>
-                        Logout
-                    </a>
+                <div>
+                    <label for="StreetAddress" class="text-gray-600 mb-2 block">
+                        Street Address <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="StreetAddress" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
                 </div>
-                <!-- single link end -->
+                <div>
+                    <label for="City" class="text-gray-600 mb-2 block">
+                        Town/City <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="City" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
+                </div>
+                <div>
+                    <label for="ZipCode" class="text-gray-600 mb-2 block">
+                        Zip Code <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="ZipCode" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
+                </div>
+                <div>
+                    <label for="PhoneNumber" class="text-gray-600 mb-2 block">
+                        Phone Number <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="PhoneNumber" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
+                </div>
+                <div>
+                    <label for="EmailAddress" class="text-gray-600 mb-2 block">
+                        Email Address <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" id="EmailAddress" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0">
+                </div>
             </div>
-            <!-- profile links end -->
+        </div>
+        <!-- checkout form end -->
+        
+        <!-- sidebar -->
+        <div class="col-span-4 border border-gray-200 p-4 rounded">
+            <h4 class="text-gray-600 text-lg mb-4 font-medium uppercase">Order Summary</h4>
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italien Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">$320</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italien Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">$320</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italien Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">$320</p>
+                </div>
+                <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                    <p>Subtotal</p>
+                    <p>$320</p>
+                </div>
+                <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                    <p>Shipping</p>
+                    <p>Free</p>
+                </div>
+                <div class="flex justify-between text-gray-800 font-medium py-3 uppercase">
+                    <p class="font-semibold">Total</p>
+                    <p>$320</p>
+                </div>
+                <div class="flex items-center mb-4 mt-2">
+                    <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer w-3 h-3">
+                    <label for="agreement" class="text-gray-600 ml-3 cursor-pointer text-sm">Agree to our <a href="#" class="text-primary">terms & conditions</a></label>
+                </div>
+                <a href="#" class="block text-center w-full py-2 text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transiton uppercase font-roboto font-medium">
+                    Place holder
+                </a>
+            </div>
         </div>
         <!-- sidebar end -->
-
-        <!-- Profile info -->
-        <div class="col-span-9 grid grid-cols-3 gap-4">
-            <!-- single card -->
-            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
-                    <a href="#" class="text-primary">Edit</a>
-                </div>
-                <div class="space-y-1">
-                    <h4 class="text-gray-700 font-medium">Alex Esaki</h4>
-                    <p class="text-gray-800">apachecordovax@gmail.com</p>
-                    <p class="text-gray-800">654 188 685</p>
-                </div>
-            </div>
-            <!-- single card end -->
-            <!-- single card -->
-            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
-                    <a href="#" class="text-primary">Edit</a>
-                </div>
-                <div class="space-y-1">
-                    <h4 class="text-gray-700 font-medium">Alex Esaki</h4>
-                    <p class="text-gray-800">apachecordovax@gmail.com</p>
-                    <p class="text-gray-800">654 188 685</p>
-                </div>
-            </div>
-            <!-- single card end -->
-            <!-- single card -->
-            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="font-medium text-gray-800 text-lg">Personal profile</h3>
-                    <a href="#" class="text-primary">Edit</a>
-                </div>
-                <div class="space-y-1">
-                    <h4 class="text-gray-700 font-medium">Alex Esaki</h4>
-                    <p class="text-gray-800">apachecordovax@gmail.com</p>
-                    <p class="text-gray-800">654 188 685</p>
-                </div>
-            </div>
-            <!-- single card end -->
-        </div>
-        <!-- Profile info end -->
     </div>
-    <!-- Account wrapper end -->
+    <!-- checkout wrapper end -->
 
     <!-- footer -->
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
